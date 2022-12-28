@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./assets/css/base/global.css" />
+    <link rel="stylesheet" href="./assets/css/layout/styles.css" />
+</head>
+<body>
+    <main>
+        <section class="left">
+            <img src="./assets/images/ilustracao-pessoas-perfil.svg" alt="Ilustração de algumas pessoas dentro da web." class="left__image"/>
+        </section>
+        <section class="right">
+            <form class="form">
+                <fieldset class="form__wrapper">
+                    <legend class="form__header">
+                        <span class="form__subtitulo">Bem vindo de volta</span>
+                        Faça login na sua conta
+                    </legend>
+
+                    <div class="form__input-wrapper">
+                        <label for="email" class="form__label">E-mail</label>
+                        <input type="email" placeholder="codelandia@gmail.com" id="email" class="form__input" required/>
+                    </div>
+                 
+                    <div class="form__input-wrapper">
+                        <label for="password" class="form__label">Password</label>
+                        <input type="password" placeholder="*********" id="password" class="form__input" required/>
+                    </div>
+
+                    <div class="form__wrapper-remember">
+                        <div class="form__input-wrapper input__radio-wrapper">
+                            <input type="radio" id="remember" class="form__input-radio" />
+                            <label for="remember" class="form__label">Lembrar de mim</label>
+                        </div>
+
+                        <a href="#" class="form__link-remember">Esqueceu sua senha?</a>
+                    </div>
+
+                    <button class="form__enter form__button">Entrar</button>
+                    <button class="form__enter-google form__button">
+                        <img src="./assets/images/google-logo.svg" alt="Google logo">
+                        Ou faça login com o Google
+                    </button>
+                </fieldset>
+            </form>
+
+            <p class="sign-in">
+                Não tem uma conta? <a href="#" class="sign-in__link">Cadastre-se</a>
+            </p>
+        </section>
+    </main>
+</body>
+</html>

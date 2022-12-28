@@ -1,0 +1,142 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* LEFT */
+.left {
+    background-color: var(--bg-left);
+    display: grid;
+    place-content: center;
+    height: 100%;
+    width: 100%;    
+}
+
+.left__image {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* RIGHT */
+.right {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 1fr 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.form {
+    display: grid;
+    font-family: var(--ff-lato);
+    padding: 0 2rem;
+    place-items: center;
+    height: 100%;
+}
+
+.form__wrapper {
+    border: 0;
+    max-width: 35rem;
+    width: 100%;
+}
+
+.form__header {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--ff-merriweather);
+    font-size: var(--fs-form-titulo);
+    font-weight: bold;
+    margin-bottom: 3.9rem;
+}
+
+.form__subtitulo {
+    display: block;
+    font-size: var(--fs-form-subtitulo);
+    font-weight: normal;
+    margin-bottom: .8rem;
+}
+
+.form__label {
+    font-size: var(--fs-form-label);
+    font-weight: 400;
+    margin-bottom: 1.1rem;
+}
+
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input-wrapper + .form__input-wrapper {
+    margin-top: 1.1rem;
+}
+
+.form__input {
+    padding: 1.4rem;
+}
+
+.form__wrapper-remember {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-block: 2.6rem;
+}
+
+.input__radio-wrapper {
+    align-items: baseline;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+.input__radio-wrapper label {
+    margin-left: 1.1rem;
+}
+
+.form__link-remember {
+    color: var(--color-link);
+    font-size: var(--fs-form-link);
+}
+
+.form__enter {
+    background-color: var(--bg-button-01);
+    margin-bottom: 1.5rem;
+}
+
+.form__enter:hover {
+    background-color: var(--bg-button-01-hover);
+}
+
+.form__enter-google {
+    align-items: center;
+    background-color: var(--bg-button-02);
+    display: flex;
+    gap: 1.1rem;
+    justify-content: center;
+}
+
+.form__enter-google:hover {
+    background-color: var(--bg-button-02-hover);
+
+}
+
+.sign-in {
+    text-align: center;
+}
+
+.sign-in__link {
+    color: var(--color-link);
+}
+
+@media screen and (max-width: 768px){
+    main {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+
+    .left {
+        display: none;
+    }
+}
